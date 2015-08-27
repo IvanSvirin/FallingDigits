@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/fallingDigits/Cell.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fallingDigits/Creature.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fallingDigits/Field.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fallingDigits/Game.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fallingDigits/GameWindow.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fallingDigits/Main.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
