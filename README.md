@@ -1,2 +1,2 @@
 # FallingDigits
-#игра с числами на Java
+игра с числами на Java
