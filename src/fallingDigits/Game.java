@@ -117,29 +117,33 @@ public class Game implements Runnable {
         int sum = 0, beginBlock = 0, endBlock = 0;
         for (int i = currentCell.x; i > 0 ; i--) {
             sum = 0;
-            if (currentCell.x < 10) {
                 for (int j = i; j < 11; j++) {
-                    sum += field.cells[j][currentCell.y].cellValue;
-                    if (sum == targetSum) {
-                        beginBlock = i;
-                        endBlock = j;
+                    if (field.cells[j][currentCell.y].cellValue != 0) {
+                        sum += field.cells[j][currentCell.y].cellValue;
+                        if (sum == targetSum) {
+                            beginBlock = i;
+                            endBlock = j;
+                            break;
+                        }
+                    } else {
                         break;
                     }
                 }
-            }
         }
         for (int i = currentCell.x; i < 11 ; i++) {
             sum = 0;
-            if (currentCell.x < 10) {
                 for (int j = i; j > 0; j--) {
-                    sum += field.cells[j][currentCell.y].cellValue;
-                    if (sum == targetSum) {
-                        beginBlock = j;
-                        endBlock = i;
+                    if (field.cells[j][currentCell.y].cellValue != 0) {
+                        sum += field.cells[j][currentCell.y].cellValue;
+                        if (sum == targetSum) {
+                            beginBlock = j;
+                            endBlock = i;
+                            break;
+                        }
+                    } else {
                         break;
                     }
                 }
-            }
         }
         if (beginBlock != 0 && endBlock != 0) {
             for (int i = currentCell.y; i > 0; i--) {
